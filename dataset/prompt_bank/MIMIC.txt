@@ -1,0 +1,2 @@
+MIMIC indicates real-world in-hospital patient records. Each patient's record consists of 48 time steps (hourly) of multivariate vital signals, plus clinical text notes.
+We focus on 48-hour In-Hospital Mortality (IHM) prediction.
