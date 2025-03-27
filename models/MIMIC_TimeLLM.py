@@ -475,8 +475,8 @@ Clinical text notes are recorded at certain hours as well.
 ***
 [Instruction]:
 {task_instruction}
-1) Structural time-series data (for Feature {n}).
-2) Clinical text notes at certain times.
+1) Clinical text notes at certain times.
+2) Structural time-series data (for Feature {n}).
 
 ***
 [Statistics]:
@@ -487,12 +487,12 @@ Clinical text notes are recorded at certain hours as well.
 - Top five lags: {lag_vals}
 
 ***
-[Text Notes with Timestamps]:
+[Clinical text notes]:
 We have M notes, each recorded at a specific hour:
 {text_notes}
 
 ***
-[END DATA]
+[Structural time-series data]
 """
             prompt.append(prompt_)
 
