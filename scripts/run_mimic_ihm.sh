@@ -17,9 +17,10 @@ comment='mimic_ihm_48h'
 # --use_wandb --wandb_project "MIMIC-TimeLLM" --wandb_entity "hcy50662-national-university-of-singapore-students-union" \
 python run_mimic.py \
   --task_name classification \
+  --use_wandb --wandb_project "TimeLLM" --wandb_entity "hcy50662-national-university-of-singapore-students-union" \
   --num_workers 0 \
   --is_training 1 \
-  --root_path /Users/haochengyang/Desktop/research/CTPD/MMMSPG-014C/EHR_dataset/mimiciii_benchmark/output_mimic3/ihm \
+  --root_path /home/ubuntu/Virginia/output_mimic3/ihm \
   --model_id mimic \
   --model $model_name \
   --data MIMIC \

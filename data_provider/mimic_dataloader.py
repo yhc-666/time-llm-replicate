@@ -105,8 +105,8 @@ class MIMICDataset(Dataset):
         
         # 将文本数据和时间戳打包在一起返回
         text_info = {
-            'text': text_data[-3:],
-            'time': text_time[-3:]
+            'text': text_data[-5:],
+            'time': text_time[-5:]
         }
         
         return ts_data, dec_seq, ts_mark, dec_mark, label, text_info
@@ -118,7 +118,7 @@ class MIMICDataset(Dataset):
 
 if __name__ == '__main__':
     # 这里的 root_path 请替换成你真实的MIMIC数据目录
-    root_path = '/Users/haochengyang/Desktop/research/CTPD/MMMSPG-014C/EHR_dataset/mimiciii_benchmark/output_mimic3/ihm'
+    root_path = '/home/ubuntu/Virginia/output_mimic3/ihm'
     
     # 实例化一个训练集示例
     dataset = MIMICDataset(root_path=root_path, flag='train', task='ihm')
